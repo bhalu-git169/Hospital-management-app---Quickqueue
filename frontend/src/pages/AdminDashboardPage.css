@@ -1,0 +1,155 @@
+/* Admin dashboard layout */
+
+.qq-admin-screen {
+  padding: 22px 24px;
+  background: linear-gradient(135deg, #eff6ff 0%, #ecfdf5 50%, #f9fafb 100%);
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.qq-admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.qq-admin-header h1 {
+  font-size: 1.6rem;
+  color: #0f172a;
+}
+
+.qq-admin-header p {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin-top: 4px;
+}
+
+.qq-admin-logout {
+  border-radius: 999px;
+  border: none;
+  padding: 8px 16px;
+  background: #ef4444;
+  color: #f9fafb;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Main card */
+
+.qq-admin-main {
+  background: #f8fafc;
+  border-radius: 18px;
+  padding: 18px 20px;
+  box-shadow: 0 14px 32px rgba(148, 163, 184, 0.3);
+}
+
+/* Top status row */
+
+.qq-admin-toprow {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.qq-admin-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 12px 14px;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.qq-admin-card label,
+.qq-admin-card p {
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+.qq-admin-card h2 {
+  font-size: 1.4rem;
+  color: #0f172a;
+}
+
+.qq-admin-card select {
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+  font-size: 0.9rem;
+}
+
+/* Control buttons */
+
+.qq-admin-controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.qq-btn-next,
+.qq-btn-reset {
+  border-radius: 10px;
+  border: none;
+  padding: 10px 16px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.qq-btn-next {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+}
+
+.qq-btn-reset {
+  background: linear-gradient(135deg, #f97316, #ea580c);
+}
+
+/* Token table */
+
+.qq-admin-table-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 14px 16px;
+  border: 1px solid #e2e8f0;
+}
+
+.qq-admin-table-card h3 {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #0f172a;
+}
+
+.qq-admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.qq-admin-table th,
+.qq-admin-table td {
+  padding: 8px 10px;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+.qq-admin-table th {
+  font-weight: 600;
+  color: #64748b;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .qq-admin-toprow {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .qq-admin-controls {
+    flex-direction: column;
+  }
+}

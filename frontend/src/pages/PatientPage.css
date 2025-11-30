@@ -1,0 +1,158 @@
+/* src/pages/PatientPage.css */
+
+/* PatientPage sits inside the main content card from App.css */
+.patient-page {
+  width: 100%;
+}
+
+/* Center content, but no extra big outer card */
+.patient-container {
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* Header above the form */
+.header {
+  text-align: left;
+  margin-bottom: 18px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.4rem;
+  color: #111827;
+}
+
+.header p {
+  margin-top: 4px;
+  color: #6b7280;
+}
+
+/* Main token form card */
+.token-form {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 20px 22px;
+  box-shadow: 0 10px 26px rgba(148, 163, 184, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Shared form field styles */
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.form-group input,
+.form-group select {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 2px rgba(129, 140, 248, 0.3);
+}
+
+/* Buttons use global .btn classes from Button.js */
+
+/* Result view when token is generated */
+
+.token-result {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 20px 22px;
+  box-shadow: 0 10px 26px rgba(148, 163, 184, 0.3);
+  text-align: center;
+}
+
+.instruction {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-top: 8px;
+}
+
+/* Token card from your existing styles */
+
+.token-card {
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  color: white;
+  padding: 24px;
+  border-radius: 18px;
+  margin: 18px 0;
+}
+
+.token-label {
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+.token-number {
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 8px 0;
+}
+
+.department-name {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.queue-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.info-box {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.info-label {
+  font-size: 0.75rem;
+  opacity: 0.9;
+}
+
+.info-value {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+/* Small screens */
+
+@media (max-width: 640px) {
+  .patient-container {
+    max-width: 100%;
+  }
+
+  .token-form,
+  .token-result {
+    padding: 16px 14px;
+  }
+
+  .token-number {
+    font-size: 2.4rem;
+  }
+}
