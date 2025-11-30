@@ -4,7 +4,7 @@ QuickQueue is a web app that turns crowded hospital waiting lines into a smooth,
 Built in under 48 hours for Hackarena 2.0 by a 2‑member team.
 
 ## 🚀 Live Demo
-Frontend (React, GitHub Pages): [https://bhalu-git169.github.io/Hospital-management-app---Quickqueue/user/login](https://bhalu-git169.github.io/Hospital-management-app---Quickqueue/user/login)
+Frontend (React, GitHub Pages): ([https://bhalu-git169.github.io/Hospital-management-app---Quickqueue/user/login](https://bhalu-git169.github.io/Hospital-management-app---Quickqueue/user/app))
 ### Backend (Flask, Render)
 Base URL: [https://hospital-management-app-quickqueue.onrender.com/api/departments](https://hospital-management-app-quickqueue.onrender.com/api/departments)
 
