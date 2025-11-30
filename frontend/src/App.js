@@ -100,19 +100,20 @@ function MainShell() {
     </div>
   );
 }
-
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Hospital-management-app---Quickqueue/">
       <Routes>
         <Route path="/" element={<Navigate to="/user/login" replace />} />
         <Route path="/user/login" element={<UserLoginPage />} />
         <Route path="/user/app" element={<MainShell />} />
         <Route path="/admin/login" element={<AdminLoginPage />} />
         <Route path="/admin" element={<AdminDashboardPage />} />
+        <Route path="*" element={<Navigate to="/user/login" replace />} />
       </Routes>
     </BrowserRouter>
   );
 }
+
 
 export default App;

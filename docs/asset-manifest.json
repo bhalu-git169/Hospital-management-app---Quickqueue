@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Hospital-management-app---Quickqueue/static/css/main.1e6f65cd.css",
-    "main.js": "/Hospital-management-app---Quickqueue/static/js/main.7fb96d49.js",
+    "main.js": "/Hospital-management-app---Quickqueue/static/js/main.bac3a23c.js",
     "index.html": "/Hospital-management-app---Quickqueue/index.html",
     "main.1e6f65cd.css.map": "/Hospital-management-app---Quickqueue/static/css/main.1e6f65cd.css.map",
-    "main.7fb96d49.js.map": "/Hospital-management-app---Quickqueue/static/js/main.7fb96d49.js.map"
+    "main.bac3a23c.js.map": "/Hospital-management-app---Quickqueue/static/js/main.bac3a23c.js.map"
   },
   "entrypoints": [
     "static/css/main.1e6f65cd.css",
-    "static/js/main.7fb96d49.js"
+    "static/js/main.bac3a23c.js"
   ]
 }
